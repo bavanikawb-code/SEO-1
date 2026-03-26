@@ -23,8 +23,8 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <!-- Schema Markup -->
   <script type="application/ld+json">
@@ -114,7 +114,7 @@
       <div class="hero-title-with-image">
         <h1 id="hero-heading">The <em>Airport Shuttle Alternative  Paris</em><br>Deserves</h1>
         <div class="hero-image">
-          <img src="pic1.jpg" alt="Paris VTC service premium vehicle" />
+          <img src="pic1.webp" alt="Paris VTC service premium vehicle" loading="lazy" width="500" height="400" />
         </div>
       </div>
       <p class="hero-desc">Professional, punctual, and fixed-price VTC transfers to every Paris airport and train station. No surge pricing. No surprises. Just seamless travel.</p>
@@ -830,7 +830,7 @@
 
 
 
-<script>
+<script defer>
   // --- PAGE ROUTING ---
   function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
